@@ -1,32 +1,27 @@
-
-"""
-Turtles with a loop. 
-
-This program has four identical lines of code to draw a square, 
-but you know you can use a loop to make the program simpler. 
-
-"""
-
-
 import turtle                           # Tell Python we want to work with the turtle
-turtle.setup (width=600, height=600)    # Set the size of the window
+turtle.setup(width=100, height=100, startx = 0, starty = 0)
+tina = turtle.Turtle()
 
-tina = turtle.Turtle()                  # Create a turtle named tina
-
-tina.shape('turtle')                    # Set the shape of the turtle to a turtle
-tina.speed(2)                           # Make the turtle move as fast, but not too fast. 
-
-tina.forward(150)                       # Move tina forward by the forward distance
-tina.left(90)                           # Turn tina left by the left turn
-
-tina.forward(150)                       # Continue the last two steps three more times
-tina.left(90)                           # to draw a square
-
-tina.forward(150)
-tina.left(90)
-
-tina.forward(150)
-tina.left(90)
+i = 0
+tri = 3
+rect = 4
+pent = 5
+hex = 6
+hept = 7
+oct = 8
+sides = hept
+angle = 360/sides
+def draw_polygon(sides):
+    for i in range(10):
+        tina.forward(i*1.5)
+        tina.left(angle)
 
 
-turtle.exitonclick()                    # Close the window when we click on it
+draw_polygon(sides)
+
+
+
+
+
+
+turtle.exitonclick()

@@ -25,6 +25,17 @@ tina.begin_fill()
 
 tina.fillcolor("blue")
 
+
+tina.circle(150)
+
+tina.circle(140)
+
+tina.circle(130)
+
+tina.circle(120)
+
+tina.circle(110)
+
 tina.circle(100)
 
 tina.circle(90)
